@@ -1,3 +1,14 @@
+# Group Information
+
+## Names and IDs
+
+1. Abubakar Ali Abdulle - C1220797
+2. Nuradin Farah Adan - C1220852
+3. Abdullahi Ali Abdullahi - C1220580
+4. Mohamed Abdisalan Ahmed - C1220843
+5. Abas Abdirahman Yusuf  - C1220847
+
+
 # Pro Notes
 
 A clean, modern, and distraction-free note-taking application.
