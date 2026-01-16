@@ -1,0 +1,168 @@
+:root {
+    --primary: #111827;
+    --gray-soft: #f9fafb;
+    --border: #e5e7eb;
+    --text-main: #374151;
+    --text-muted: #6b7280;
+}
+
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+}
+
+body {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+}
+
+.wrapper {
+    width: 100%;
+    /* max-width: 900px; */
+     /* Wider for web-based feel */
+}
+
+.signup-card {
+    background: #f3f4f6;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr; /* Split layout */
+    /* border-radius: 24px; */
+    height: 100vh;
+    overflow: hidden;
+    /* box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1); */
+}
+
+/* Brand Section (The "Web" look) */
+.brand-section {
+    background-color: var(--primary);
+    background-image: radial-gradient(circle at 2px 2px, #2d3748 1px, transparent 0);
+    background-size: 24px 24px;
+    color: white;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.brand-content h2 { font-size: 32px; margin-bottom: 16px; }
+.brand-content p { color: #9ca3af; line-height: 1.6; }
+
+/* Form Section */
+.form-section {
+    padding: 60px;
+    margin-top: 36px;
+}
+
+header { margin-bottom: 32px; }
+header h1 { font-size: 28px; color: var(--primary); margin-bottom: 8px; }
+header p { color: var(--text-muted); }
+
+.input-group { margin-bottom: 24px; }
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-main);
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 15px;
+    background: var(--gray-soft);
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    background: white;
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(17, 24, 39, 0.05);
+}
+
+.radio-group { display: flex; gap: 20px; }
+.radio-item { display: flex; align-items: center; cursor: pointer; font-size: 14px; }
+.radio-item input { margin-right: 8px; accent-color: var(--primary); }
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer { margin-top: 32px; text-align: center; font-size: 14px; color: var(--text-muted); }
+footer a { color: var(--primary); font-weight: 600; text-decoration: none; }
+
+/* Responsive Media Query */
+@media (max-width: 768px) {
+    .signup-card {
+        grid-template-columns: 1fr; /* Stacks to mobile view */
+    }
+    .brand-section {
+        display: none; /* Hide brand section on small screens for brevity */
+    }
+    .form-section {
+        padding: 40px 24px;
+    }
+}
+
+
+/* Add this to signin.css (clean error UI) */
+.alert {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 16px 0 22px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #fecaca;       /* soft red */
+  background: #fff1f2;             /* very light red */
+  color: #7f1d1d;                  /* deep red text */
+}
+
+.alert__icon {
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+}
+
+.alert__title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #7f1d1d;
+}
+
+.alert__list {
+  margin: 0;
+  padding-left: 18px;
+  color: #991b1b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Optional: highlight invalid inputs when there are errors */
+.input-error {
+  border-color: #fca5a5 !important;
+  background: #fff !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.08);
+}
+
+.helper-text {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #991b1b;
+}
