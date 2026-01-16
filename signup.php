@@ -107,7 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // New CSRF token
                 $_SESSION['csrf'] = bin2hex(random_bytes(32));
 
-                header('Location: index.php'); // change if needed
+                header('Location: dashboard.php'); // change if needed
                 exit;
             }
         } catch (Throwable $t) {
