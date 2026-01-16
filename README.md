@@ -39,3 +39,9 @@ A clean, modern, and distraction-free note-taking application.
 
 ### Edit Profile
 ![Edit Profile](images/edit-profile.png)
+
+### Sign In
+![Sign in](images/signin.png)
+
+### Sign Up
+![Sign up](images/signup.png)
