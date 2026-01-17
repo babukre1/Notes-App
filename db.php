@@ -1,7 +1,7 @@
 <?php
 // db.php
 // Update these for your XAMPP/WAMP environment.
-$DB_HOST = 'localhost';
+$DB_HOST = 'localhost'; 
 $DB_NAME = 'notes_app';
 $DB_USER = 'root';
 $DB_PASS = ''; // XAMPP default is often empty

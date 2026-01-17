@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save_note'])) {
                 );
                 $stmt->execute([
                     ':uid' => $userId,
-                    ':title' => $title,
+                    ':title' => $title, 
                     ':content' => $content,
                     ':fav' => $isFavourite
                 ]);
