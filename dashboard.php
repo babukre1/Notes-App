@@ -799,7 +799,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
                 </div>
 
             <?php elseif ($activeNote): ?>
-                <form action="index.php" method="POST" style="height: 100%; display: flex; flex-direction: column;">
+                <form action="dashboard.php" method="POST" style="height: 100%; display: flex; flex-direction: column;">
                     <input type="hidden" name="csrf" value="<?= e($csrfToken) ?>">
                     <input type="hidden" name="id" value="<?= (int) $activeNote['id'] ?>">
                     <input type="hidden" name="is_favourite" id="fav_input"
